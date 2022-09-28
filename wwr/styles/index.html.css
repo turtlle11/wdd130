@@ -92,10 +92,6 @@ footer a{
     background-color: #84ab30;
 }
 
-footer p {
-    text-size: 1.2em;
-}  
-
 footer p a:hover {
     text-decoration: underline;
 }
