@@ -1,19 +1,39 @@
+@font-face {
+    font-family: "Arial,Helvetica Neue,Helvetica,sans-serif";  
+    src: url("https://www.cssfontstack.com/Arial"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
 #background {
     height: 725px;
     background-color: #84ab30;
 }
 body {
     background-color: #84ab30; 
+    font-family: "Arial,Helvetica Neue,Helvetica,sans-serif"; 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+
+h2 {
+    margin: 0;
+}
+
  header {
     background-color:#84ab30;
 }
 
 .msg{
+    line-height: 1.5em;
     background-color: #84ab30;
+    padding: 35px;
 }
 footer{
     background-color: #84ab30;
+    padding: 25px 50px;
+    margin-top: 200px;
 } 
 
 #content{
@@ -27,6 +47,7 @@ footer{
 }
 .button-box{
     text-align: center;
+    color: white
 }
 main section{
     text-align: center;
@@ -37,8 +58,11 @@ nav a:hover{
     color: #231604;
 }
 .home-title{
+    font-family: 'Arial,Helvetica Neue,Helvetica,sans-serif';
+    font-size: 2em;
     background-color: #84ab30;
     color: #231604;
+    margin-top: 10px
 }
 h4{
     background-color: #84ab30;
@@ -54,8 +78,11 @@ h4{
     color: #231604;
 }
 .msg p{
+    font-family: 'Arial,Helvetica Neue,Helvetica,sans-serif';
+    font-size: .8em;
     background-color: #84ab30;
     color: #231604;
+    padding-bottom: 15px;
 }
 footer h3{
     background-color: #84ab30;
@@ -69,6 +96,7 @@ footer a:hover{
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 nav a {
@@ -76,13 +104,20 @@ nav a {
     color: #17028e;
     text-decoration: none;
     background-color: #84ab30;
+    padding: 35px;
+    text-align: center;
 }
 
 .book, .join{
+    font-family: 'Arial,Helvetica Neue,Helvetica,sans-serif';
+    font-size: 18px;
     text-align: center;
-    color: #17028e;
+    color: white;
     text-decoration: none;
-    background-color: #84ab30;
+    background-color: #25300e;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
     
 }
 footer a{
@@ -94,4 +129,24 @@ footer a{
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+#logo_link {
+    padding-top: 5px;
+}  
+  
+footer .social img {
+    padding-top: 15px;
+}
+
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #3e4f19;
+}
+main section img {
+    box-sizing: border-box;
 }
