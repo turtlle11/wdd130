@@ -8,6 +8,8 @@
 #background {
     height: 725px;
     background-color: #84ab30;
+    grid-row:4/9;
+    grid-column: 1/11;
 }
 body {
     background-color: #84ab30; 
@@ -21,9 +23,7 @@ h2 {
     margin: 0;
 }
 
- header {
-    background-color:#84ab30;
-}
+
 
 .msg{
     line-height: 1.5em;
@@ -44,8 +44,7 @@ footer{
     margin: 0 auto;
 }
 
-
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1{
     text-align: center;
 }
 .button-box{
@@ -63,13 +62,8 @@ nav a:hover{
 .home-title{
     font-family: 'Arial,Helvetica Neue,Helvetica,sans-serif';
     font-size: 2em;
-    background-color: #84ab30;
-    color: #231604;
+    color: #ffffff;
     margin-top: 10px
-}
-h4{
-    background-color: #84ab30;
-    color: #231604;
 }
 
 .book:hover, .join:hover{
@@ -77,14 +71,12 @@ h4{
     color: #231604;
 }
 .msg h2{
-    background-color: #84ab30;
     color: #231604;
 }
 .msg p{
     font-family: 'Arial,Helvetica Neue,Helvetica,sans-serif';
     font-size: .8em;
-    background-color: #84ab30;
-    color: #231604;
+    color: #fcfcfc;
     padding-bottom: 15px;
 }
 footer h3{
@@ -134,22 +126,12 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-#logo_link {
-    padding-top: 5px;
-}  
   
 footer .social img {
     padding-top: 15px;
 }
 
 
-.rivers-card .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-.card-img {
-    border: 10px solid #3e4f19;
-}
 main section img {
     box-sizing: border-box;
 }
@@ -157,6 +139,7 @@ main section img {
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    background-color:#84ab30;
 }
         
 nav {
@@ -179,6 +162,7 @@ nav {
       
 #hero-msg h4 {
     color: white;
+    text-align: center;
 }
    
 
@@ -194,10 +178,6 @@ nav {
     z-index: -1;
 }
 
-.card-img, .mountains {
-    width: 100%;
-}
-
 .home-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -205,58 +185,96 @@ nav {
 }
 
 .rivers-card{
-grid-row-start: 2/10;
-grid-row-end: 3/10; 
-grid-column-start: 2/10;
-grid-column-end: 4/10;
+grid-row: 2/3;
+grid-column: 2/4;
 margin: 200px 0;
 }
 
 .camping-card{
-grid-row-start: 2/10;
-grid-row-end: 3/10; 
-grid-column-start: 5/10;
-grid-column-end: 7/10; 
+grid-row: 2/3;
+grid-column: 5/7;
 margin: 200px 0;
 }
 .rapids-card{
-    grid-row-start: 2/10;
-grid-row-end: 3/10; 
-grid-column-start: 8/10;
-grid-column-end: 10/10;
-margin: 200px 0;
+    grid-row: 2/3;
+    grid-column: 8/10;
+    margin: 200px 0;
 }
-
-
-#background{
-    grid-row-start:4/10;
-    grid-row-end: 9/10; 
-grid-column-start: 1/11 ;
-grid-column-end:11/11 ;
-}
-
 
 
 .mountains{
-    grid-row-start: 5/10;
-    grid-row-end:8/10 ;
-    grid-column-start:2/10;;
-    grid-column-end: 7/10 ;
+    grid-row: 5/8;
+    grid-column:2/7;
+    width: 100%;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg{
-    grid-row-start: 6/10;
-    grid-row-end:7/10 ;
-    grid-column-start:6/10;;
-    grid-column-end: 10/10 ;
+    grid-row: 6/7;
+    grid-column:6/10;
+    background-color: #6f7364;
+    padding: 35px;
+
 }
 
 .card-img {
-    border: 10px solid #d9c2a3;
+    border: 10px solid #3e4f19;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
+}
+
+
+#hero-img{
+    width: 100%;
+}
+
+.logo{
+    width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
