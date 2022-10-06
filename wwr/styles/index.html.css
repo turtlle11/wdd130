@@ -34,6 +34,9 @@ footer{
     background-color: #84ab30;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 } 
 
 #content{
@@ -140,7 +143,7 @@ footer .social img {
 }
 
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card .camping-card, .rapids-card {
     margin: 200px 0;
 }
 
@@ -149,4 +152,111 @@ footer .social img {
 }
 main section img {
     box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+        
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+      
+#hero-msg h4 {
+    color: white;
+}
+   
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.rivers-card{
+grid-row-start: 2/10;
+grid-row-end: 3/10; 
+grid-column-start: 2/10;
+grid-column-end: 4/10;
+margin: 200px 0;
+}
+
+.camping-card{
+grid-row-start: 2/10;
+grid-row-end: 3/10; 
+grid-column-start: 5/10;
+grid-column-end: 7/10; 
+margin: 200px 0;
+}
+.rapids-card{
+    grid-row-start: 2/10;
+grid-row-end: 3/10; 
+grid-column-start: 8/10;
+grid-column-end: 10/10;
+margin: 200px 0;
+}
+
+
+#background{
+    grid-row-start:4/10;
+    grid-row-end: 9/10; 
+grid-column-start: 1/11 ;
+grid-column-end:11/11 ;
+}
+
+
+
+.mountains{
+    grid-row-start: 5/10;
+    grid-row-end:8/10 ;
+    grid-column-start:2/10;;
+    grid-column-end: 7/10 ;
+}
+
+.msg{
+    grid-row-start: 6/10;
+    grid-row-end:7/10 ;
+    grid-column-start:6/10;;
+    grid-column-end: 10/10 ;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
