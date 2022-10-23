@@ -107,12 +107,12 @@ header {
     box-shadow: 5px 5px 10px #c7e772;
     width: 400px;
     height: 400px;
-   
+   margin-left: 160px;
     margin-top: 0;
 }
 
 .img1 {
-    margin-left: 90px;
+    margin-left: 160px;
     border: 10px solid #002bc8;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #c7e772;
@@ -123,7 +123,7 @@ header {
 }
 
 .img2 {
-    margin-left: 90px;
+    margin-left: 160px;
     border: 10px solid #002bc8;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #c7e772;
@@ -134,7 +134,7 @@ header {
 }
 
 .img3 {
-    margin-left: 90px;
+    margin-left: 160px;
     border: 10px solid #002bc8;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #c7e772;
