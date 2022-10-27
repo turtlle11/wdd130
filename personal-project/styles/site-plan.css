@@ -12,9 +12,9 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #0896fb   ;
-  --secondary-color: hsl(57, 85%, 54%) ;
-  --accent1-color: #e8ce0a;
+  --primary-color: #072cff  ;
+  --secondary-color: #faef0d ;
+  --accent1-color: #f8f395;;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
